@@ -1,35 +1,5 @@
 .container-fluid
   .row
-    #main.col-xs-12.no-padding
-      #carousel-main.carousel.slide{"data-ride" => "carousel"}
-        / Indicators
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-main"}
-          %li{"data-slide-to" => "1", "data-target" => "#carousel-main"}
-          %li{"data-slide-to" => "2", "data-target" => "#carousel-main"}
-
-        / Wrapper for slides
-        .carousel-inner
-          %a.item.active.first{href: '#'}
-            .carousel-caption
-              %h3 Карпати - місце, де зупинився час
-              %p Ця історія почалася дуже давно...
-          %a.item.second{href: '#'}
-            .carousel-caption
-              %h3 Я тут був. Тут був мій дід.
-              %p Ця історія почалася дуже давно...
-          %a.item.third{href: '#'}
-            .carousel-caption
-              %h3 Карпати - інші міри
-              %p Ця історія почалася дуже давно...
-
-        / Controls
-        %a.left.carousel-control{"data-slide" => "prev", href: "#carousel-main"}
-          %span.glyphicon.glyphicon-chevron-left
-        %a.right.carousel-control{"data-slide" => "next", href: "#carousel-main"}
-          %span.glyphicon.glyphicon-chevron-right
-
-  .row
     #geology.no-padding.col-xs-6
       #carousel-geology.carousel.slide{"data-ride" => "carousel"}
         / Indicators

@@ -3,27 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap/mixins";
 
-body {
-  padding-top: 50px;
-}
-
-.navbar {
-  margin-bottom: 0;
-
-  .navbar-brand {
-    padding: 0;
-    margin: 0 !important;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
-
-  &.ghost { opacity: 0.5; }
-
-  transition: opacity 1s ease-in-out;
-
-  .logo { width: 60px; }
-}
+html, body { height: 100%; }
 
 .no-padding {
   padding-left: 0 !important;

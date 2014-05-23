@@ -1,7 +1,9 @@
-$(window).scroll(function() {
-  var height = $(window).scrollTop();
-  var menu   = $('.navbar');
-  var clazz  = 'ghost';
+(function(){
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    var menu   = $('.navbar');
+    var clazz  = 'ghost';
 
-  height > menu.height() ? menu.addClass(clazz) : menu.removeClass(clazz);
-});
+    height > menu.height() ? menu.addClass(clazz) : menu.removeClass(clazz);
+  });
+})();

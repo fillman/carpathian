@@ -1,0 +1,19 @@
+header {
+  nav {
+    margin-bottom: 0;
+
+    a.navbar-brand {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+
+      img.logo { max-width: 60px; }
+    }
+
+    &.ghost { opacity: 0.5; }
+
+    transition: opacity 1s ease-in-out;
+  }
+}

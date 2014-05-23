@@ -16,9 +16,12 @@
 
 // Load fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
-//
+
+// Load custom variables
 @import "bootstrap-custom";
+
 // Load bootstrap
 @import "bootstrap";
-// Landing page custom styles
-@import "welcome";
+
+// Sections styles
+@import "sections/*";
