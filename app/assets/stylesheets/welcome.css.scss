@@ -1,0 +1,221 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap/mixins";
+
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+  margin-bottom: 0;
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0 !important;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  &.ghost { opacity: 0.5; }
+
+  transition: opacity 1s ease-in-out;
+
+  .logo { width: 60px; }
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.thumbnail {
+  border: 0;
+  height: 250px;
+  border-radius: 0;
+  margin: 0;
+
+  a {
+    color: #fff;
+  }
+}
+
+.breadcrumb {
+  margin: 0;
+}
+
+.carousel .item {
+  height: 400px;
+}
+
+.carousel .item, .thumbnail {
+    &.first {
+      background: asset_url('static/1.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.second {
+      background: asset_url('static/2.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.third {
+      background: asset_url('static/3.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.four {
+      background: asset_url('static/7.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.five {
+      background: asset_url('static/8.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.six {
+      background: asset_url('static/9.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.four {
+      background: asset_url('static/7.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.five {
+      background: asset_url('static/8.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.six {
+      background: asset_url('static/9.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.seven {
+      background: asset_url('static/4.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.eight {
+      background: asset_url('static/5.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.nine {
+      background: asset_url('static/6.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.ten {
+      background: asset_url('static/10.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.eleven {
+      background: asset_url('static/11.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    &.twelve {
+      background: asset_url('static/12.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+}
+
+.carousel .slide {
+  &:hover {
+    box-sizing: content-box;
+    padding: 50px;
+    margin: -50px;
+  }
+
+  transition: all 1s ease-in-out;
+}
+
+.author {
+  padding-top: 100px;
+
+  .thumbnail {
+    background: none;
+  }
+  h3, p {
+    text-align: center;
+  }
+}
+
+.content {
+  padding-top: 100px;
+
+  .thumbnail {
+    @include clearfix();
+    height: 100%;
+
+    .caption {
+      img {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  h3, p {
+    color: #000;
+  }
+}
+body.single {
+  background: asset_url('static/2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
