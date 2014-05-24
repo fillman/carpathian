@@ -12,11 +12,23 @@ $(function(){
 
   // Adding a fade method
   Category.prototype.showCategory = function(event) {
-    $(event.target).fadeTo(2000, 0.5);
+    $(this.$element).find('a.category').stop().animate({
+      top: '5%'
+    }, 200);
+
+    $(this.$element).find('.item-pattern-black').stop().animate({
+      opacity: '0.6'
+    }, 200);
   };
 
   Category.prototype.hideCategory = function(event) {
-    $(event.target).fadeTo(2000, 1);
+    $(this.$element).find('a.category').stop().animate({
+      top: '-15%'
+    }, 200);
+
+    $(this.$element).find('.item-pattern-black').stop().animate({
+      opacity: '0'
+    }, 200);
   };
 
   $('[data-ride="carousel"]').each(function () {

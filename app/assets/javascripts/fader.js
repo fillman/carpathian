@@ -26,7 +26,7 @@ $(function(){
       	  alpha = (docViewTop - hidingStart) / (elemBottom - hidingStart),
       	  opacity_value = 1 - alpha;
       if (hidingStart < docViewTop) { 
-    	  this.$element.css('opacity', opacity_value);  
+    	  this.$element.css('opacity', opacity_value);
       } else { 
     	  this.$element.css('opacity', '1');
       }
