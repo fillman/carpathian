@@ -18,10 +18,26 @@ $(function(){
     });
   };
 
+  Fader.prototype.slowhide = function() {
+      var docViewTop = $(window).scrollTop(),
+      	elemTop = this.$element.offset().top,
+      	hidingStart = elemTop,
+      	elemBottom = elemTop + this.$element.height(),
+      	alpha = (docViewTop - hidingStart) / (elemBottom - hidingStart),
+      	opacity_value = 1 - alpha;
+      if (hidingStart < docViewTop) { 
+    	  this.$element.css('opacity', opacity_value);  
+      } else { 
+    	  this.$element.css('opacity', '1');
+      }
+  };
+  
   $('[data-ride="fader"]').each(function () {
     var $element = $(this),
         fader = new Fader($element, {});
 
     setInterval(function() { fader.fade() }, {});
+    $(window).scroll(function(){ fader.slowhide(); })
+    
   })
 });
