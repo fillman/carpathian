@@ -1,6 +1,6 @@
 .container-fluid
   .row
-    #geology.no-padding.col-xs-6
+    #geology.col-xs-6.no-padding
       #carousel-geology.carousel.slide{"data-ride" => "carousel"}
         / Indicators
         %ol.carousel-indicators
@@ -83,6 +83,74 @@
               %h3 Я тут був. Тут був мій дід.
               %p Ця історія почалася дуже давно...
           .item.twelve
+            .carousel-caption
+              %h3 Карпати - інші міри
+              %p Ця історія почалася дуже давно...
+
+  .message
+    .row
+      .col-xs-6.col-xs-offset-3.no-padding
+        .message__text
+          %blockquote
+            %p
+              Несмотря на сложности, дивергенция векторного поля позитивно нейтрализует
+              абстрактный математический анализ, в итоге приходим к логическому противоречию.
+
+  .row
+    #geology.col-xs-6.no-padding
+      #carousel-geology.carousel.slide{"data-ride" => "carousel"}
+        / Indicators
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-geology"}
+          %li{"data-slide-to" => "1", "data-target" => "#carousel-geology"}
+          %li{"data-slide-to" => "2", "data-target" => "#carousel-geology"}
+
+        / Wrapper for slides
+        .carousel-inner
+          / Pattern
+          .item-pattern-black
+          / Category
+          %a.category
+            %h2 Люди
+          / Items
+          %a.item.active.four
+            .carousel-caption
+              %h3 Карпати - місце, де зупинився час
+              %p Ця історія почалася дуже давно...
+          .item.five
+            .carousel-caption
+              %h3 Я тут був. Тут був мій дід.
+              %p Ця історія почалася дуже давно...
+          .item.six
+            .carousel-caption
+              %h3 Карпати - інші міри
+              %p Ця історія почалася дуже давно...
+
+    #history.col-xs-6.no-padding
+      #carousel-history.carousel.slide{"data-ride" => "carousel"}
+        / Indicators
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-history"}
+          %li{"data-slide-to" => "1", "data-target" => "#carousel-history"}
+          %li{"data-slide-to" => "2", "data-target" => "#carousel-history"}
+
+        / Wrapper for slides
+        .carousel-inner
+          / Pattern
+          .item-pattern-black
+          / Category
+          %a.category
+            %h2 Інші карпати
+          / Items
+          .item.active.seven
+            .carousel-caption
+              %h3 Карпати - місце, де зупинився час
+              %p Ця історія почалася дуже давно...
+          .item.eight
+            .carousel-caption
+              %h3 Я тут був. Тут був мій дід.
+              %p Ця історія почалася дуже давно...
+          .item.nine
             .carousel-caption
               %h3 Карпати - інші міри
               %p Ця історія почалася дуже давно...
