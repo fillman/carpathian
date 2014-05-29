@@ -1,156 +1,177 @@
-.container-fluid
-  .row
-    #geology.col-xs-6.no-padding
-      #carousel-geology.carousel.slide{"data-ride" => "carousel"}
-        / Indicators
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-geology"}
-          %li{"data-slide-to" => "1", "data-target" => "#carousel-geology"}
-          %li{"data-slide-to" => "2", "data-target" => "#carousel-geology"}
+.main{ data: { ride: 'fader' } }
+  %article.first.main__article
+    %a
+      %blockquote
+        %h3 Карпати - місце, де зупинився час
+        %footer by Stanislav Avtoritet
 
-        / Wrapper for slides
-        .carousel-inner
-          / Pattern
-          .item-pattern-black
-          / Category
-          %a.category
-            %h2 Місця
-          / Items
-          %a.item.active.four
-            .carousel-caption
-              %h3 Карпати - місце, де зупинився час
-              %p Ця історія почалася дуже давно...
-          .item.five
-            .carousel-caption
-              %h3 Я тут був. Тут був мій дід.
-              %p Ця історія почалася дуже давно...
-          .item.six
-            .carousel-caption
-              %h3 Карпати - інші міри
-              %p Ця історія почалася дуже давно...
+  %article.second.main__article
+    %a
+      %blockquote
+        %h3 Станислав авторитет
+        %footer by Крыса
 
-    #history.col-xs-6.no-padding
-      #carousel-history.carousel.slide{"data-ride" => "carousel"}
-        / Indicators
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-history"}
-          %li{"data-slide-to" => "1", "data-target" => "#carousel-history"}
-          %li{"data-slide-to" => "2", "data-target" => "#carousel-history"}
+  %article.third.main__article
+    %a
+      %blockquote
+        %h3 Имитация Станислава авторитета
+        %footer by Бобыр и Крыса
 
-        / Wrapper for slides
-        .carousel-inner
-          / Pattern
-          .item-pattern-black
-          / Category
-          %a.category
-            %h2 Історія
-          / Items
-          .item.active.seven
-            .carousel-caption
-              %h3 Карпати - місце, де зупинився час
-              %p Ця історія почалася дуже давно...
-          .item.eight
-            .carousel-caption
-              %h3 Я тут був. Тут був мій дід.
-              %p Ця історія почалася дуже давно...
-          .item.nine
-            .carousel-caption
-              %h3 Карпати - інші міри
-              %p Ця історія почалася дуже давно...
-
-  .row
-    #flora.col-xs-12.no-padding
-      #carousel-flora.carousel.slide{"data-ride" => "carousel"}
-        / Indicators
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-flora"}
-          %li{"data-slide-to" => "1", "data-target" => "#carousel-flora"}
-          %li{"data-slide-to" => "2", "data-target" => "#carousel-flora"}
-
-        / Wrapper for slides
-        .carousel-inner
-          / Pattern
-          .item-pattern-black
-          / Category
-          %a.category
-            %h2 Рослини
-          .item.active.ten
-            .carousel-caption
-              %h3 Карпати - місце, де зупинився час
-              %p Ця історія почалася дуже давно...
-          .item.eleven
-            .carousel-caption
-              %h3 Я тут був. Тут був мій дід.
-              %p Ця історія почалася дуже давно...
-          .item.twelve
-            .carousel-caption
-              %h3 Карпати - інші міри
-              %p Ця історія почалася дуже давно...
-
-  .message
+.categories
+  .container-fluid
     .row
-      .col-xs-6.col-xs-offset-3.no-padding
-        .message__text
-          %blockquote
-            %p
-              Несмотря на сложности, дивергенция векторного поля позитивно нейтрализует
-              абстрактный математический анализ, в итоге приходим к логическому противоречию.
+      .categories__places.col-xs-6
+        .categories__places-carousel.carousel.slide{ data: { ride: 'carousel' } }
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{ data: { slide: { to: '0' }, target: '.categories__places-carousel' } }
+            %li{ data: { slide: { to: '1' }, target: '.categories__places-carousel' } }
+            %li{ data: { slide: { to: '2' }, target: '.categories__places-carousel' } }
+          / Wrapper for slides
+          .carousel-inner
+            / Pattern
+            .carousel-pattern-black
+            / Category
+            %a.carousel-category
+              %h2 Місця
+            / Items
+            .item.active.four
+              .carousel-caption
+                %h3 Карпати - місце, де зупинився час
+                %p Ця історія почалася дуже давно...
+            .item.five
+              .carousel-caption
+                %h3 Я тут був. Тут був мій дід.
+                %p Ця історія почалася дуже давно...
+            .item.six
+              .carousel-caption
+                %h3 Карпати - інші міри
+                %p Ця історія почалася дуже давно...
 
-  .row
-    #geology.col-xs-6.no-padding
-      #carousel-geology.carousel.slide{"data-ride" => "carousel"}
-        / Indicators
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-geology"}
-          %li{"data-slide-to" => "1", "data-target" => "#carousel-geology"}
-          %li{"data-slide-to" => "2", "data-target" => "#carousel-geology"}
+      .categories__history.col-xs-6
+        .categories__history-carousel.carousel.slide{ data: { ride: 'carousel' } }
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{ data: { slide: { to: '0' }, target: '.categories__history-carousel' } }
+            %li{ data: { slide: { to: '1' }, target: '.categories__history-carousel' } }
+            %li{ data: { slide: { to: '2' }, target: '.categories__history-carousel' } }
 
-        / Wrapper for slides
-        .carousel-inner
-          / Pattern
-          .item-pattern-black
-          / Category
-          %a.category
-            %h2 Люди
-          / Items
-          %a.item.active.four
-            .carousel-caption
-              %h3 Карпати - місце, де зупинився час
-              %p Ця історія почалася дуже давно...
-          .item.five
-            .carousel-caption
-              %h3 Я тут був. Тут був мій дід.
-              %p Ця історія почалася дуже давно...
-          .item.six
-            .carousel-caption
-              %h3 Карпати - інші міри
-              %p Ця історія почалася дуже давно...
+          / Wrapper for slides
+          .carousel-inner
+            / Pattern
+            .carousel-pattern-black
+            / Category
+            %a.carousel-category
+              %h2 Історія
+            / Items
+            .item.active.seven
+              .carousel-caption
+                %h3 Карпати - місце, де зупинився час
+                %p Ця історія почалася дуже давно...
+            .item.eight
+              .carousel-caption
+                %h3 Я тут був. Тут був мій дід.
+                %p Ця історія почалася дуже давно...
+            .item.nine
+              .carousel-caption
+                %h3 Карпати - інші міри
+                %p Ця історія почалася дуже давно...
 
-    #history.col-xs-6.no-padding
-      #carousel-history.carousel.slide{"data-ride" => "carousel"}
-        / Indicators
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-history"}
-          %li{"data-slide-to" => "1", "data-target" => "#carousel-history"}
-          %li{"data-slide-to" => "2", "data-target" => "#carousel-history"}
+    .row
+      .categories__flora.col-xs-12
+        .categories__flora-carousel.carousel.slide{ data: { ride: 'carousel' } }
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{ data: { slide: { to: '0' }, target: '.categories__flora-carousel' } }
+            %li{ data: { slide: { to: '1' }, target: '.categories__flora-carousel' } }
+            %li{ data: { slide: { to: '2' }, target: '.categories__flora-carousel' } }
 
-        / Wrapper for slides
-        .carousel-inner
-          / Pattern
-          .item-pattern-black
-          / Category
-          %a.category
-            %h2 Інші карпати
-          / Items
-          .item.active.seven
-            .carousel-caption
-              %h3 Карпати - місце, де зупинився час
-              %p Ця історія почалася дуже давно...
-          .item.eight
-            .carousel-caption
-              %h3 Я тут був. Тут був мій дід.
-              %p Ця історія почалася дуже давно...
-          .item.nine
-            .carousel-caption
-              %h3 Карпати - інші міри
-              %p Ця історія почалася дуже давно...
+          / Wrapper for slides
+          .carousel-inner
+            / Pattern
+            .carousel-pattern-black
+            / Category
+            %a.carousel-category
+              %h2 Рослини
+            .item.active.ten
+              .carousel-caption
+                %h3 Карпати - місце, де зупинився час
+                %p Ця історія почалася дуже давно...
+            .item.eleven
+              .carousel-caption
+                %h3 Я тут був. Тут був мій дід.
+                %p Ця історія почалася дуже давно...
+            .item.twelve
+              .carousel-caption
+                %h3 Карпати - інші міри
+                %p Ця історія почалася дуже давно...
+
+.message
+  .container-fluid
+    .row
+      .message__text.col-xs-6.col-xs-offset-3
+        %blockquote
+          %p
+            Несмотря на сложности, дивергенция векторного поля позитивно нейтрализует
+            абстрактный математический анализ, в итоге приходим к логическому противоречию.
+
+.categories
+  .container-fluid
+    .row
+      .categories__people.col-xs-6
+        .categories__people-carousel.carousel.slide{ data: { ride: 'carousel' } }
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{ data: { slide: { to: '0' }, target: '.categories__people-carousel' } }
+            %li{ data: { slide: { to: '1' }, target: '.categories__people-carousel' } }
+            %li{ data: { slide: { to: '2' }, target: '.categories__people-carousel' } }
+
+          / Wrapper for slides
+          .carousel-inner
+            / Pattern
+            .carousel-pattern-black
+            / Category
+            %a.carousel-category
+              %h2 Люди
+            / Items
+            %a.item.active.four
+              .carousel-caption
+                %h3 Карпати - місце, де зупинився час
+                %p Ця історія почалася дуже давно...
+            .item.five
+              .carousel-caption
+                %h3 Я тут був. Тут був мій дід.
+                %p Ця історія почалася дуже давно...
+            .item.six
+              .carousel-caption
+                %h3 Карпати - інші міри
+                %p Ця історія почалася дуже давно...
+
+      .categories__other.col-xs-6
+        .categories__other-carousel.carousel.slide{ data: { ride: 'carousel' } }
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{ data: { slide: { to: '0' }, target: '.categories__other-carousel' } }
+            %li{ data: { slide: { to: '1' }, target: '.categories__other-carousel' } }
+            %li{ data: { slide: { to: '2' }, target: '.categories__other-carousel' } }
+
+          / Wrapper for slides
+          .carousel-inner
+            / Pattern
+            .carousel-pattern-black
+            / Category
+            %a.carousel-category
+              %h2 Інші карпати
+            / Items
+            .item.active.seven
+              .carousel-caption
+                %h3 Карпати - місце, де зупинився час
+                %p Ця історія почалася дуже давно...
+            .item.eight
+              .carousel-caption
+                %h3 Я тут був. Тут був мій дід.
+                %p Ця історія почалася дуже давно...
+            .item.nine
+              .carousel-caption
+                %h3 Карпати - інші міри
+                %p Ця історія почалася дуже давно...

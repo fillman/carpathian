@@ -151,16 +151,6 @@ html, body { height: 100%; }
     }
 }
 
-.carousel .slide {
-  &:hover {
-    box-sizing: content-box;
-    padding: 50px;
-    margin: -50px;
-  }
-
-  transition: all 1s ease-in-out;
-}
-
 .author {
   padding-top: 100px;
 

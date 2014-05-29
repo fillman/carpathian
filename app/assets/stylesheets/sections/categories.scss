@@ -1,5 +1,11 @@
-.carousel {
-  .item-pattern-black {
+.categories {
+  // Remove padding from blocks
+  [class*="col-"] {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .carousel-pattern-black {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,7 +16,7 @@
     background-color: #000;
   }
 
-  a.category {
+  .carousel-category {
     position: absolute;
     left: 10%;
     top: -20%;
